@@ -8,11 +8,11 @@ public class Pistelaskuri : MonoBehaviour {
     Vector3 sijainti;
     public int pisteet = 0;
     float step = 0.1f;
-    
 
 
 
-    
+
+    GameObject paatos = null;
     GameObject pisteteksti2 = null;
     GameObject taso = null;
     GameObject auto = null;
@@ -24,7 +24,7 @@ public class Pistelaskuri : MonoBehaviour {
         
         
         this.pisteteksti2 = GameObject.Find("Pistelaskuri2");
-        
+        this.paatos = GameObject.Find("Main");
         this.taso = GameObject.Find("Lattia");
         this.auto = GameObject.Find("Ajoneuvo");
         
@@ -36,7 +36,7 @@ public class Pistelaskuri : MonoBehaviour {
     if(pisteet < 6)
     {
             
-            this.pisteteksti2.GetComponent<Text>().text = "POINTS:" +  this.pisteet;
+            this.pisteteksti2.GetComponent<Text>().text = "" + this.pisteet + "/6";
         }
     else
         {
@@ -47,9 +47,9 @@ public class Pistelaskuri : MonoBehaviour {
             this.auto.GetComponent<Transform>().position = Vector3.MoveTowards(sijainti, paate, step);
             this.auto.GetComponent<Transform>().Rotate(1f, 1f, 1f);
 
-            
+            this.paatos.GetComponent<Text>().text = "LEVEL CLEARED!";
 
-            this.pisteteksti2.GetComponent<Text>().text = "TOTAL POINTS: " + this.pisteet;
+            this.pisteteksti2.GetComponent<Text>().text = "" + this.pisteet + "/6";
             
         }
         

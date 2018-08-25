@@ -15,7 +15,7 @@ public class AjoneuvoOhjaus1 : MonoBehaviour {
 	void Start () {
 
         this.laatikko = GameObject.Find("Ajoneuvo");
-        this.teksti = GameObject.Find("Laskuri2");
+        this.teksti = GameObject.Find("Main");
 		
 	}
 	
@@ -41,7 +41,7 @@ public class AjoneuvoOhjaus1 : MonoBehaviour {
 
         if(this.laatikko.transform.position.y < 0) {
             this.teksti.GetComponent<Text>().color = Color.red;
-            this.teksti.GetComponent<Text>().text = "GAME OVER!\\nPress R \nto play again";
+            this.teksti.GetComponent<Text>().text = "GAME OVER! Press 'R' to play again";
         }
 
 

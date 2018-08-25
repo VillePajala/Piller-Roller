@@ -25,11 +25,11 @@ public class Laskuriteksti : MonoBehaviour {
         if(pojo < 6)
         {
             this.laskuri++;
-            this.tekstiolio2.GetComponent<Text>().text = "TIME:" + this.laskuri;
+            this.tekstiolio2.GetComponent<Text>().text = "" + this.laskuri;
         }
         else
         {
-            this.tekstiolio2.GetComponent<Text>().text = "TOTAL TIME:" + this.laskuri;
+            this.tekstiolio2.GetComponent<Text>().text = "" + this.laskuri;
         }
         
 
