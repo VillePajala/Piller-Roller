@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Pistelaskuri : MonoBehaviour {
-    Vector3 paate = new Vector3(0f, 6f, 0f);
+    Vector3 paate = new Vector3(0f, 8f, 0f);
     Vector3 sijainti;
     public int pisteet = 0;
     float step = 0.1f;
