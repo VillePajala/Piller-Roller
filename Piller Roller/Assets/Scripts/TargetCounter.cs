@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class TargetCounter : MonoBehaviour {
 
-    Vector3 destination = new Vector3(0f, 8f, 0f);
+    Vector3 destination = new Vector3(0f, 12f, 0f);
     Vector3 location;
     public int points = 0;
     float step = 0.1f;
