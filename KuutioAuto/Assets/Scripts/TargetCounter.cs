@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TargetCounter : MonoBehaviour {
 
@@ -11,14 +12,17 @@ public class TargetCounter : MonoBehaviour {
     float step = 0.1f;
 
     GameObject gameinfo = null;
+    GameObject gameinfo2 = null;
     GameObject pointcounter = null;
     GameObject plane = null;
     GameObject player = null;
+
   
     void Start () {   
      
         this.pointcounter = GameObject.Find("TargetCounter");
         this.gameinfo = GameObject.Find("Main");
+        this.gameinfo2 = GameObject.Find("Main3");
         this.plane = GameObject.Find("Plane");
         this.player = GameObject.Find("Player");
         
@@ -42,9 +46,18 @@ public class TargetCounter : MonoBehaviour {
             this.player.GetComponent<Transform>().Rotate(1f, 1f, 1f);
 
             this.gameinfo.GetComponent<Text>().text = "LEVEL CLEARED!";
+            this.gameinfo2.GetComponent<Text>().text = "Press Space for next Level or R to Replay";
 
             this.pointcounter.GetComponent<Text>().text = "" + this.points + "/6";
-            
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SceneManager.LoadScene(2);
+            } // if
+
+
+
+
         } // else
         
 	} // Update

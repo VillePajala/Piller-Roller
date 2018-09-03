@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class TimeCounter : MonoBehaviour {
 
+   
+
     public int counter = 0;
     public int score = 0;
 
@@ -22,7 +24,9 @@ public class TimeCounter : MonoBehaviour {
 
         score = this.finalscore.GetComponent<TargetCounter>().points;
 
-        if(score < 6)
+       
+
+        if (score < 6 && Time.timeScale == 1)
         {
             this.counter++;
             this.timecounter.GetComponent<Text>().text = "" + this.counter;

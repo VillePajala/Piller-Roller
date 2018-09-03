@@ -18,6 +18,7 @@ public class Piller : MonoBehaviour {
         {
 
             this.screen.GetComponent<TargetCounter>().points += 1;
+            Destroy(this.gameObject, 10);
             enabled = false;
         } // if
     } // Update
