@@ -5,7 +5,7 @@ Made with Unity
 
 You can play the game Here: https://villepajala.itch.io/piller-roller
 
-If you want to go straight to see the code, click [HERE.](Piller%20MRoller/Assets/Scripts)
+If you want to go straight to see the code, click [HERE.](Piller%20Roller/Assets/Scripts)
 
 ![](Piller%20Roller/images/piller_roller4.png)
 ![](Piller%20Roller/images/piller_roller1.png)
