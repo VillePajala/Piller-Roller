@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class TimeCounter : MonoBehaviour {
 
-   
-
     public int counter = 0;
     public int score = 0;
 
@@ -17,26 +15,19 @@ public class TimeCounter : MonoBehaviour {
     void Start () {
         this.timecounter = GameObject.Find("TimeCounter");
         this.finalscore = GameObject.Find("Plane");
-    } // Start
-	
+    } 
 	
 	void Update () {
-
         score = this.finalscore.GetComponent<TargetCounter>().points;
 
-       
-
-        if (score < 6 && Time.timeScale == 1)
-        {
+        if (score < 6 && Time.timeScale == 1) {
             this.counter++;
             this.timecounter.GetComponent<Text>().text = "" + this.counter;
-        } // if
-        else
-        {
+        } else {
             this.timecounter.GetComponent<Text>().text = "" + this.counter;
-        } // else
-        
-        
-    } //Update
+        }
+    } 
    
-} // Class
+} 
+
+

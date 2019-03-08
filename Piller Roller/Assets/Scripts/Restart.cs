@@ -5,11 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour {
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.R)) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        } // if
-    } // Update
-} // Class
+        }
+    } 
+    
+} 

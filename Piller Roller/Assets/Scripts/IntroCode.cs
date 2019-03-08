@@ -7,13 +7,13 @@ public class IntroCode : MonoBehaviour {
 
 	void Start () {
 		
-	} // Start
-	
+	} 
 	
 	void Update () {
 		if (Input.anyKey)
         {
             SceneManager.LoadScene(1);
-        } // if
-	} // Update
-} // Class
+        } 
+	} 
+
+}
