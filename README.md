@@ -2,6 +2,11 @@
 
 Piller Roller is a 3D game where the players goal is to drop all the "pills" of the platform to clear the level.
 
+## Features
+
+* Cube movement
+* Points system
+
 ## Play Game
 
 You can play the game Here: https://villepajala.itch.io/piller-roller
